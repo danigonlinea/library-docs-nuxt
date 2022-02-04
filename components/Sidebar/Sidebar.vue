@@ -1,14 +1,14 @@
 <template>
-    <nav class="watson-sidebar">
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-        </ul>
-    </nav>
+  <nav class="watson-sidebar">
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+  </nav>
 </template>
 
 <style lang="css" scoped>
-    @import "./Sidebar.css";
+@import './Sidebar.css';
 </style>

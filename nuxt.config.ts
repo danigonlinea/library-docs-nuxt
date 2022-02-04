@@ -7,15 +7,20 @@ export default defineNuxtConfig({
   },
   meta: {
     meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
     link: [
-      { rel: 'preconnect', href: 'https://fonts.googleapis.com'},
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap' }
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: true,
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap',
+      },
     ],
   },
-  css: [
-    '@/assets/css/main.css',
-  ]    
+  css: ['@/assets/css/main.css'],
 })

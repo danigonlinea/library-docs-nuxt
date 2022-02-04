@@ -2,13 +2,10 @@
   <Content>
     <template #content>
       <article>
-       
-        <p>
-         this is another
-        </p>
+        <p>this is another</p>
       </article>
     </template>
-  </Content>    
+  </Content>
 </template>
 
 <script>

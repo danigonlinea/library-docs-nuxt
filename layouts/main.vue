@@ -2,10 +2,7 @@
   <div class="main-container">
     <Sidebar />
     <slot />
-
   </div>
-
-  
 </template>
 
 <script>
