@@ -1,6 +1,6 @@
 <template>
   <div class="watson-sidebar">
-    <a class="watson-logo" href="/">Watson</a>
+    <NuxtLink class="watson-logo" to="/">Watson</NuxtLink>
     <nav>
       <ul>
         <li>item 1</li>
