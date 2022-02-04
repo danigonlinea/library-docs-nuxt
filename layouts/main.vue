@@ -1,7 +1,9 @@
 <template>
-  <div class="main-container">
-    <Sidebar />
-    <slot />
+  <div class="watson-site-container">
+    <div class="watson-main-container">
+      <Sidebar />
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -12,7 +14,10 @@ definePageMeta({
 </script>
 
 <style scoped>
-.main-container {
+.site-container {
+  min-height: 100vh;
+}
+.watson-main-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   min-height: 100%;

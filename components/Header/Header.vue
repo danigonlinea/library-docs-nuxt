@@ -11,5 +11,5 @@
 </template>
 
 <style lang="css" scoped>
-@import './Header.css';
+@import './Header.scss';
 </style>
