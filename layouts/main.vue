@@ -14,12 +14,12 @@ definePageMeta({
 </script>
 
 <style scoped>
-.site-container {
+.watson-site-container {
   min-height: 100vh;
 }
 .watson-main-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   min-height: 100%;
 }
 </style>
