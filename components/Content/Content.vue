@@ -1,5 +1,7 @@
 <template>
-  <slot name="content"> </slot>
+  <div>
+    <slot name="content"> </slot>
+  </div>
 </template>
 <style lang="scss" scoped>
 @import './Content.scss';

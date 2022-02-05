@@ -1,15 +1,12 @@
 <template>
   <Content>
     <template #content>
-      <article>
-        <p>this is another</p>
-      </article>
+      <h1>You are viewing components: {{ $route.params.name }}</h1>
     </template>
   </Content>
 </template>
 
 <script>
-// This will also work in `<script setup>`
 definePageMeta({
   layout: 'main',
 })

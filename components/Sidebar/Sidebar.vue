@@ -4,13 +4,13 @@
     <nav>
       <ul>
         <li class="watson-sidebar-section" v-for="section in sidebarMenu">
-          <NuxtLink :to="section.key">{{ section.name }}</NuxtLink>
+          <NuxtLink :to="section.path">{{ section.name }}</NuxtLink>
           <ul v-if="section.items" class="watson-sidebar-item">
             <li
               class="watson-sidebar-section-item"
               v-for="item in section.items"
             >
-              <NuxtLink :to="item.key">{{ item.name }}</NuxtLink>
+              <NuxtLink :to="item.path">{{ item.name }}</NuxtLink>
             </li>
           </ul>
         </li>
@@ -19,7 +19,9 @@
   </div>
 </template>
 <script setup>
-import { sidebarMenu } from './config'
+import { generateSidebar } from './config'
+
+const sidebarMenu = generateSidebar()
 </script>
 <style lang="scss" scoped>
 @import './Sidebar.scss';
