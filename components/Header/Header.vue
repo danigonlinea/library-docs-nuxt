@@ -4,6 +4,6 @@
   </header>
 </template>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 @import './Header.scss';
 </style>
