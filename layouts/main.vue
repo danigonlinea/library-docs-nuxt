@@ -2,7 +2,10 @@
   <div class="watson-site-container">
     <div class="watson-main-container">
       <Sidebar />
-      <slot />
+      <div>
+        <Header />
+        <slot />
+      </div>
     </div>
   </div>
 </template>
