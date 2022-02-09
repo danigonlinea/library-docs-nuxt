@@ -1,15 +1,8 @@
 .watson-sidebar {
-  outline: 1px solid blue;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  overflow: auto;
+  min-height: 100vh;
+  overflow-y: auto;
+  background-color: #f5f5f5;
 }
 
 .watson-logo {
-  font-size: 2em;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
 }
