@@ -2,12 +2,12 @@
   <Content>
     <template #content>
       <article>
-        <h1>Welcome to Watson</h1>
+        <h1>Welcome to Watson, the Docplanner's design system.</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          culpa accusantium esse voluptatem velit recusandae, numquam alias?
-          Nulla, ipsam nesciunt. At quia architecto omnis expedita nisi nesciunt
-          nostrum, sunt voluptatibus.
+          Watson is Docplanner's design language for products and digital
+          experiences. With the Docplanner Design Language as its foundation,
+          the system consists of working code, design tools and resources, human
+          interface guidelines, and a vibrant community of contributors.
         </p>
       </article>
     </template>

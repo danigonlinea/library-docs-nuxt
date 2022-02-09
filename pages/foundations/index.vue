@@ -1,7 +1,7 @@
 <template>
   <Content>
     <template #content>
-      <h1>You are viewing foundations!</h1>
+      <h1>Foundations</h1>
     </template>
   </Content>
 </template>

@@ -76,3 +76,18 @@ h3,
 h4 {
   font-family: 'Noto Serif', serif;
 }
+
+p {
+  max-width: 55ch;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.25;
+  max-width: 30ch;
+  margin-bottom: 1.5rem;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}

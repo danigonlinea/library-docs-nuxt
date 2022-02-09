@@ -1,7 +1,7 @@
 <template>
   <Content>
     <template #content>
-      <h1>You are viewing components: {{ $route.params.name }}</h1>
+      <h1>{{ $route.params.name }}</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum suscipit
         labore aliquid eum laborum laudantium dicta in, provident explicabo hic
