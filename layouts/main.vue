@@ -4,17 +4,12 @@
       <Sidebar />
       <div>
         <Header />
-        <slot />
+
+        <Nuxt />
       </div>
     </div>
   </div>
 </template>
-
-<script>
-definePageMeta({
-  layout: 'Default Page',
-})
-</script>
 
 <style lang="scss" scoped>
 @import './main.scss';

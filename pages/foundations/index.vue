@@ -7,7 +7,7 @@
 </template>
 
 <script>
-definePageMeta({
+export default {
   layout: 'main',
-})
+}
 </script>

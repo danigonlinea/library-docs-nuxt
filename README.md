@@ -1,6 +1,6 @@
 # Watson Site
 
-Site made with [Nuxt 3](https://v3.nuxtjs.org).
+Site made with [Nuxt 2](https://nuxtjs.org).
 
 ## Setup
 
@@ -42,7 +42,7 @@ Configure your VS Code Editor
 Install all the dependencies of the project and start the development server.
 
 ```bash
-yarn install
+yarn
 yarn dev
 ```
 
@@ -59,5 +59,3 @@ yarn build
 ## Deployment
 
 We will use Vercel platform
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).

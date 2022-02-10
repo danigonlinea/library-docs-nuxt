@@ -1,7 +1,7 @@
 <template>
   <Content>
     <template #content>
-      <h1>{{ $route.params.name }}</h1>
+      <h1>{{ $route.params.slug }}</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum suscipit
         labore aliquid eum laborum laudantium dicta in, provident explicabo hic
@@ -151,7 +151,7 @@
 </template>
 
 <script>
-definePageMeta({
+export default {
   layout: 'main',
-})
+}
 </script>

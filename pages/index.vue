@@ -15,8 +15,7 @@
 </template>
 
 <script>
-// This will also work in `<script setup>`
-definePageMeta({
+export default {
   layout: 'main',
-})
+}
 </script>
