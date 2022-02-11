@@ -47,7 +47,6 @@ export default {
         .fetch()
 
       this.pages = pagesResult.filter(page => {
-        console.log(page)
         return page.dir !== '/'
       })
     },
