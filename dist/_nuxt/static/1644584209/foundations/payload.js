@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/foundations", {data:[{page:{slug:"_index",description:"introduction to foundations",title:"Foundations",toc:[],body:{type:"root",children:[]},dir:"\u002Ffoundations",path:"\u002Ffoundations\u002F_index",extension:".md",createdAt:"2022-02-11T11:17:57.278Z",updatedAt:"2022-02-11T11:23:45.517Z"}}],fetch:{},mutations:void 0});
