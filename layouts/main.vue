@@ -4,7 +4,7 @@
       <Sidebar />
       <div>
         <Header />
-
+        <!-- Here is the content of the page -->
         <Nuxt />
       </div>
     </div>

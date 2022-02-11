@@ -1,0 +1,6 @@
+# Ignore artifacts:
+dist
+.nuxt
+.vscode
+node_modules
+static

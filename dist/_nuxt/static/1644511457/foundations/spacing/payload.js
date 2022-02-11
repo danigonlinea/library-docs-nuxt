@@ -1,1 +1,5 @@
-__NUXT_JSONP__("/foundations/spacing", {data:[{}],fetch:{},mutations:void 0});
+__NUXT_JSONP__('/foundations/spacing', {
+  data: [{}],
+  fetch: {},
+  mutations: void 0,
+})

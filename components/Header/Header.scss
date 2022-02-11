@@ -5,4 +5,5 @@ $white: #fff;
   top: 0;
   background: $white;
   padding: 1.5rem 0;
+  z-index: 1; // header above content in scroll
 }
