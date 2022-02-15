@@ -4,16 +4,16 @@
     <nav>
       <ul>
         <li
-          class="watson-sidebar-section"
-          :key="section.name"
           v-for="section in sidebarMenu"
+          :key="section.name"
+          class="watson-sidebar-section"
         >
           <NuxtLink :to="section.path">{{ section.name }}</NuxtLink>
           <ul v-if="section.items" class="watson-sidebar-item">
             <li
-              class="watson-sidebar-section-item"
-              :key="item.name"
               v-for="item in section.items"
+              :key="item.name"
+              class="watson-sidebar-section-item"
             >
               <NuxtLink :to="item.path">{{ item.name }}</NuxtLink>
             </li>
@@ -34,7 +34,6 @@ const watsonSidebarMenu = {
 
 export default {
   name: 'Sidebar',
-
   computed: {
     sidebarMenu() {
       return Object.keys(watsonSidebarMenu).map(sectionName => {

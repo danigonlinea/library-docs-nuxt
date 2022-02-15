@@ -14,8 +14,8 @@
             path: page.path,
             params: { slug: page.slug },
           }"
-          >{{ page.title }}</NuxtLink
-        >
+          >{{ page.title }}
+        </NuxtLink>
       </li>
     </ul>
   </header>

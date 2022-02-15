@@ -8,6 +8,7 @@
 <script>
 export default {
   layout: 'main',
+
   async asyncData({ $content, params }) {
     const page = await $content('foundations', params.slug).fetch()
 

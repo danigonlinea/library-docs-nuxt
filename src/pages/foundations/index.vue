@@ -9,6 +9,7 @@
 <script>
 export default {
   layout: 'main',
+
   async asyncData({ $content, route }) {
     const page = await $content(`${route.name}/index`).fetch()
 
