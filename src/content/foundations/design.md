@@ -1,6 +1,6 @@
 ---
 title: Design
-description:
+description: here goes the description
 ---
 
 ## Overview

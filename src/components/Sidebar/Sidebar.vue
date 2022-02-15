@@ -42,10 +42,12 @@ export default {
           key: sectionName.toLowerCase(),
           path: `/${sectionName.toLowerCase()}`,
           items: watsonSidebarMenu[sectionName].map(sectionItem => {
+            const defaultRoute =
+              sectionName.toLowerCase() === 'components' ? '/usage' : ''
             return {
               name: sectionItem,
               key: sectionItem.toLowerCase(),
-              path: `/${sectionName.toLowerCase()}/${sectionItem.toLowerCase()}`,
+              path: `/${sectionName.toLowerCase()}/${sectionItem.toLowerCase()}${defaultRoute}`,
             }
           }),
         }

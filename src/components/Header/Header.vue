@@ -11,7 +11,7 @@
       <li v-for="page of pages" :key="page.path">
         <NuxtLink
           :to="{
-            path: page.path,
+            path: `${page.path}`,
             params: { slug: page.slug },
           }"
           >{{ page.title }}

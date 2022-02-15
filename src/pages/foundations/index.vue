@@ -9,9 +9,8 @@
 <script>
 export default {
   layout: 'main',
-
-  async asyncData({ $content, route }) {
-    const page = await $content(`${route.name}/index`).fetch()
+  async asyncData({ $content, route, params }) {
+    const page = await $content(`foundations/index`).fetch()
 
     return {
       page,
