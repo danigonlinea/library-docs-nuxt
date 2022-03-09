@@ -4,7 +4,6 @@
 
 <script>
 export default {
-  layout: 'main',
   async asyncData({ $content }) {
     const page = await $content('index').fetch()
 

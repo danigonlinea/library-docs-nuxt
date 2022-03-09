@@ -17,7 +17,6 @@
 const navigationTabOptions = ['Usage', 'Code', 'Examples']
 
 export default {
-  layout: 'main',
   async asyncData({ $content, params, route }) {
     const component = await $content(route.path).fetch()
 

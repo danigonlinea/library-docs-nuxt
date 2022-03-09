@@ -9,7 +9,6 @@
 
 <script>
 export default {
-  layout: 'main',
   async asyncData({ $content, params, route }) {
     console.log(route.path, params)
     const page = await $content(route.path).fetch()
