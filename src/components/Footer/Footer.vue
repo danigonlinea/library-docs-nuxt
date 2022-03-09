@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <small>Docplanner 2022.</small>
+    <small>@ 2022 Docplanner Group</small>
   </footer>
 </template>
 
@@ -9,3 +9,11 @@ export default {
   name: 'Footer',
 }
 </script>
+
+<style lang="scss" scoped>
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+</style>

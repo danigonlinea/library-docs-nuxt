@@ -7,14 +7,14 @@
       <main>
         <Nuxt />
       </main>
+
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  layout: 'main',
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>
@@ -29,6 +29,11 @@ export default {
 
   :nth-child(2) {
     grid-column: 3 / -1;
+  }
+
+  main {
+    min-height: calc(100vh - 128px);
+    width: 100%;
   }
 }
 </style>
