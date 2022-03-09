@@ -1,7 +1,7 @@
 <template>
   <div id="watson-site" class="watson-site">
     <Sidebar />
-    <div>
+    <div class="watson-page">
       <Header />
       <!-- Here is the content of the page -->
       <main>
@@ -23,6 +23,7 @@ export default {}
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 24px;
   min-height: 100vh;
+
   :nth-child(1) {
     grid-column: 1 / 3;
   }
