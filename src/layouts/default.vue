@@ -26,6 +26,7 @@ export default {}
 
   :nth-child(1) {
     grid-column: 1 / 3;
+    min-width: 260px;
   }
 
   :nth-child(2) {
