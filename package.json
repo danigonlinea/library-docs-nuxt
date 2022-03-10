@@ -20,7 +20,8 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0",
     "watson-vue": "latest",
-    "vue-docgen-cli": "^4.44.17"
+    "vue-docgen-cli": "^4.44.17",
+    "vue-simple-docgen-loader": "^4.44.17"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
