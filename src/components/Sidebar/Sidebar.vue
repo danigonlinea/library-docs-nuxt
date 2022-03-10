@@ -29,7 +29,7 @@
  */
 const watsonSidebarMenu = {
   Foundations: ['Design', 'Spacing', 'Colors', 'Typography'],
-  Components: ['Button', 'Dropdown', 'Input'],
+  Components: ['Button', 'Toggle', 'Input'],
 }
 
 export default {
