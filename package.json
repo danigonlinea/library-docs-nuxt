@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "format": "prettier --write .",
-    "lint": "eslint 'src/**/*.*' --fix"
+    "lint": "eslint 'src/**/*.*' --fix",
+    "docgen": "vue-docgen --watch"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -18,7 +19,8 @@
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0",
-    "watson-vue": "latest"
+    "watson-vue": "latest",
+    "vue-docgen-cli": "^4.33.9"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
