@@ -11,6 +11,12 @@ module.exports = function (
 
   console.log(`Generating... ${displayName}`)
 
+  console.log(config)
+  console.log(requiresMd)
+  console.log(fileName)
+
+  console.log('-------')
+
   return `
   ---
   title: ${tags.niceName ? tags.niceName[0].description : displayName}

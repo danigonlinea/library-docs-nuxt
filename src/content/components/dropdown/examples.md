@@ -1,6 +1,0 @@
----
-title: Examples
-description:
----
-
-## Examples
