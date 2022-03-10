@@ -9952,7 +9952,7 @@ vue-docgen-api@^4.44.17:
     ts-map "^1.0.3"
     vue-inbrowser-compiler-utils "^4.44.17"
 
-vue-docgen-cli@^4.33.9:
+vue-docgen-cli@^4.44.17:
   version "4.44.17"
   resolved "https://registry.yarnpkg.com/vue-docgen-cli/-/vue-docgen-cli-4.44.17.tgz#53bf78cfeaf5e6d0788e1254c5479bba480f34e4"
   integrity sha512-tGeDYy84maJ9paDQ4PsFs6XY2IThcLlxA27GrW+CI2S7S0JL8ocfoMr938cilCpfbaw0MWEkPU+W1Mz9YeQ0LA==

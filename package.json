@@ -9,7 +9,7 @@
     "generate": "nuxt generate",
     "format": "prettier --write .",
     "lint": "eslint 'src/**/*.*' --fix",
-    "docgen": "vue-docgen --watch"
+    "docgen": "vue-docgen -c ./src/docgen.config.js"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -20,7 +20,7 @@
     "vue-template-compiler": "^2.6.14",
     "webpack": "^4.46.0",
     "watson-vue": "latest",
-    "vue-docgen-cli": "^4.33.9"
+    "vue-docgen-cli": "^4.44.17"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",

@@ -9,6 +9,8 @@ module.exports = function (
 ) {
   const { displayName, description, docsBlocks, tags } = doc
 
+  console.log(displayName)
+
   const dashName = displayName
     .replace(/([a-zA-Z])(?=[A-Z])/g, '$1-')
     .toLowerCase()
