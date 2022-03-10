@@ -1,9 +1,11 @@
 ---
+
 title: Button
 menuTitle: Button
 description:
 category: Components
 position: 100
+
 ---
 
 ## Props

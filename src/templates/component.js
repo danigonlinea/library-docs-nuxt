@@ -9,51 +9,7 @@ module.exports = function (
 ) {
   const { displayName, description, docsBlocks, tags } = doc
 
-  console.log(displayName)
-
-  const dashName = displayName
-    .replace(/([a-zA-Z])(?=[A-Z])/g, '$1-')
-    .toLowerCase()
-  const cTag = '<' + dashName + ' ></' + dashName + '>'
-
-  // const badge = tags.badge ? tags.badge[0].description : ''
-  // const badgeTitle = badge !== '' ? `(${tags.badge[0].description})` : ''
-
-  const noExport = !!tags.noExport
-
-  let usage = ''
-  if (!noExport) {
-    usage = `
-  ## Usage
-  #### Import single component...
-  \`\`\` js
-  import { ${displayName} } from 'watson-vue';
-
-  //register it locally...
-  components: {
-    ${displayName},
-  }
-
-  //... or register it globally
-  Vue.component('${dashName}', ${displayName});
-  \`\`\`
-
-  #### or import the whole library,
-  \`\`\` js
-  import * as WatsonVue from 'watson-vue';
-
-  //register it globally
-  Vue.use(WatsonVue);
-  \`\`\`
-
-  #### then use it in the vue template
-  \`\`\` html
-  ${cTag}
-  \`\`\`
-  `
-  } else {
-    usage = '<p >This component is NOT exported.</p>'
-  }
+  console.log(`Generating... ${displayName}`)
 
   return `
   ---
@@ -67,8 +23,6 @@ module.exports = function (
   ---
 
   ${description}
-
-  ${usage}
 
   ${renderedUsage.props}
   ${renderedUsage.methods}

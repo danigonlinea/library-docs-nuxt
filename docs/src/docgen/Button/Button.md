@@ -1,10 +1,4 @@
----
-title: Button
-menuTitle: Button
-description:
-category: Components
-position: 100
----
+# Button
 
 ## Props
 
@@ -19,3 +13,5 @@ position: 100
 | Event name | Properties | Description |
 | ---------- | ---------- | ----------- |
 | click      |            | Click event |
+
+---
