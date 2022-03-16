@@ -10014,6 +10014,23 @@ vue-docgen-api@^4.44.17:
     ts-map "^1.0.3"
     vue-inbrowser-compiler-utils "^4.44.17"
 
+vue-docgen-api@^4.44.18:
+  version "4.44.18"
+  resolved "https://registry.yarnpkg.com/vue-docgen-api/-/vue-docgen-api-4.44.18.tgz#06224fe781e692a2f90727a615f7162743b37759"
+  integrity sha512-zZLa2TqCid97tIk98A30GnP5N46SfAsJW5p3z1PDYME0UTZWl6nKLcgQLtGfzXYT4bz+dV11cc6FumdGW0QTlA==
+  dependencies:
+    "@babel/parser" "^7.13.12"
+    "@babel/types" "^7.13.12"
+    "@vue/compiler-dom" "^3.2.0"
+    "@vue/compiler-sfc" "^3.2.0"
+    ast-types "0.14.2"
+    hash-sum "^1.0.2"
+    lru-cache "^4.1.5"
+    pug "^3.0.2"
+    recast "0.20.5"
+    ts-map "^1.0.3"
+    vue-inbrowser-compiler-utils "^4.44.17"
+
 vue-docgen-cli@^4.44.17:
   version "4.44.17"
   resolved "https://registry.yarnpkg.com/vue-docgen-cli/-/vue-docgen-cli-4.44.17.tgz#53bf78cfeaf5e6d0788e1254c5479bba480f34e4"
@@ -10153,9 +10170,9 @@ watchpack@^1.7.4:
     watchpack-chokidar2 "^2.0.1"
 
 watson-vue@latest:
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/watson-vue/-/watson-vue-0.0.28.tgz#5754fc3cf908f13a1eede2199aab48270509bf29"
-  integrity sha512-wGL6SwCw5wq10xKdIuW+yQKeluRW86XFF3FZN7luTwhIBMVvcbQXKUnJNwByV0bpMuKAs2/xbt0zpnRSIcjPPw==
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/watson-vue/-/watson-vue-0.0.29.tgz#614bda5c37cd256c33a63c6a0961920e26c1a787"
+  integrity sha512-tjV15ygcVLYAsp5OOt1upo3hhptOoaprijLmWIjTDDtw2y1i2PN9P6lp/SPFdmf62N+EIEHTwOlG61Us8P0o4w==
 
 web-namespaces@^1.0.0:
   version "1.1.4"

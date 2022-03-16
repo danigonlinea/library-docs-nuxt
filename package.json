@@ -21,6 +21,7 @@
     "webpack": "^4.46.0",
     "watson-vue": "latest",
     "vue-docgen-cli": "^4.44.17",
+    "vue-docgen-api": "^4.44.18",
     "vue-simple-docgen-loader": "^4.44.17"
   },
   "devDependencies": {
