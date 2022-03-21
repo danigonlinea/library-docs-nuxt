@@ -22,4 +22,4 @@ Lorem Ipsum available, but the majority have suffered alteration in some form, b
 
 ## Props
 
-<props-table of="Button">This are the docs</props-table>
+<props-table of="Button"></props-table>

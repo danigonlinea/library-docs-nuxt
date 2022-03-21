@@ -1,6 +1,14 @@
 <template>
   <div>
-    Here is the list of all properties of the component {{ data.displayName }}
+    <p v-if="$fetchState.pending">Fetching properties...</p>
+    <p v-else-if="$fetchState.error">An error occurred :(</p>
+    <div v-else>
+      <p>Properties for component {{ data.displayName }}</p>
+
+      <ul>
+        <li v-for="props of data.props" :key="props.name">{{ props.name }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -20,7 +28,7 @@ export default {
     }
   },
   async fetch() {
-    const response = await this.$axios.$post('/api/vue/props', {
+    const response = await this.$axios.$post('/api/vue-props', {
       name: this.of,
     })
 

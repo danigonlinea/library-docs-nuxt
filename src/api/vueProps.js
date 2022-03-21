@@ -8,12 +8,12 @@ app.use(express.urlencoded({ extended: true }))
 
 module.exports = app.use(async function (req, res) {
   try {
-    console.log(req.body)
+    const name = req.body.name
 
     const componentFolder1 = path.resolve('./node_modules/')
 
     const componentParsed = await parse(
-      `${componentFolder1}/watson-vue/src/components/Button/Button.vue`
+      `${componentFolder1}/watson-vue/src/components/${name}/${name}.vue`
     )
 
     res.status(200).json({ data: componentParsed })

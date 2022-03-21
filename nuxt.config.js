@@ -45,7 +45,12 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content'],
+  modules: ['@nuxtjs/axios', '@nuxt/content'],
+
+  serverMiddleware: [
+    // Will register file from project server-middleware directory to handle /server-middleware/* requires
+    { path: '/api/vue-props', handler: '~/api/vueProps.js' },
+  ],
 
   // Content for Nuxt Content
   content: {
