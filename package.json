@@ -13,25 +13,25 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
+    "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
+    "vue-docgen-api": "^4.44.18",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0",
     "watson-vue": "latest",
-    "vue-docgen-cli": "^4.44.17",
-    "vue-docgen-api": "^4.44.18",
-    "vue-simple-docgen-loader": "^4.44.17"
+    "webpack": "^4.46.0",
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "@nuxtjs/eslint-config": "^8.0.0",
+    "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.4.1",
-    "eslint-loader": "^4.0.2",
-    "eslint": "^8.9.0",
     "prettier": "2.5.1",
     "sass": "^1.49.7",
     "sass-loader": "10"

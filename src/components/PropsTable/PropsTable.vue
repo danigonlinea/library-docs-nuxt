@@ -1,12 +1,10 @@
 <template>
-  <div></div>
+  <div>
+    Here is the list of all properties of the component {{ data.displayName }}
+  </div>
 </template>
 
 <script>
-/**
- * this.$content page properties.
- * body, createdAt, description, dir, extension, path, slug, title, toc, updatedAt,
- */
 export default {
   name: 'PropsTable',
   props: {
@@ -18,20 +16,18 @@ export default {
   },
   data() {
     return {
-      component: undefined,
+      data: undefined,
     }
   },
-  computed: {
-    getComponent() {
-      return () => import(`watson-vue/src/components/${this.of}/${this.of}.vue`)
-    },
-  },
-  mounted() {
-    // const vueComponent = require(`../../../node_modules/watson-vue/src/components/${this.of}/${this.of}.vue`)
-    // const parsedVue = parse(this.getComponent())
-    // console.log(parsedVue)
-    // const { displayName } = parsedVue
-    // console.log(`Generating... ${displayName}`)
+  async fetch() {
+    const response = await this.$axios.$post('/api/vue/props', {
+      name: this.of,
+    })
+
+    console.log(response)
+
+    const { data } = response
+    this.data = data
   },
 }
 </script>
