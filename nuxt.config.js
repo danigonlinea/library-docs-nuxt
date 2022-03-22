@@ -48,6 +48,22 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/axios', '@nuxt/content'],
 
+  axios: {
+    baseURL: 'http://localhost:3000',
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BROWSER_BASE_URL,
+    },
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL,
+    },
+  },
+
   serverMiddleware: [
     { path: '/api/vue-props', handler: '~/api/vueProps.js' },
     { path: '/api/vue-slots', handler: '~/api/vueSlots.js' },
