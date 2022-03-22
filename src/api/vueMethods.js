@@ -7,6 +7,11 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 module.exports = app.use(async function (req, res) {
+  res.writeHead(200, '', {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'OPTIONS',
+  })
+
   try {
     const name = req.body.name
 

@@ -20,7 +20,8 @@
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "watson-vue": "latest",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
