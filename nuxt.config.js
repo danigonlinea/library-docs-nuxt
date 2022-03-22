@@ -49,12 +49,12 @@ export default {
   modules: ['@nuxtjs/axios', '@nuxt/content'],
 
   axios: {
-    baseURL: 'http://localhost:3000',
+    baseURL: process.env.BASE_URL || 'http://localhost:3000',
   },
 
   publicRuntimeConfig: {
     axios: {
-      browserBaseURL: process.env.BROWSER_BASE_URL,
+      browserBaseURL: process.env.PRODUCTION_BASE_URL,
     },
   },
 
