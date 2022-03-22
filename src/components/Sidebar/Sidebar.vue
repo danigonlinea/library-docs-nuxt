@@ -42,8 +42,7 @@ export default {
           key: sectionName.toLowerCase(),
           path: `/${sectionName.toLowerCase()}`,
           items: watsonSidebarMenu[sectionName].map(sectionItem => {
-            const defaultRoute =
-              sectionName.toLowerCase() === 'components' ? '/usage' : ''
+            const defaultRoute = ''
             return {
               name: sectionItem,
               key: sectionItem.toLowerCase(),

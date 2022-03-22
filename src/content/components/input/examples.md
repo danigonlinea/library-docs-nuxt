@@ -1,6 +1,0 @@
----
-title: Input
-description:
----
-
-## Examples

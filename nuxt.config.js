@@ -48,8 +48,9 @@ export default {
   modules: ['@nuxtjs/axios', '@nuxt/content'],
 
   serverMiddleware: [
-    // Will register file from project server-middleware directory to handle /server-middleware/* requires
     { path: '/api/vue-props', handler: '~/api/vueProps.js' },
+    { path: '/api/vue-slots', handler: '~/api/vueSlots.js' },
+    { path: '/api/vue-methods', handler: '~/api/vueMethods.js' },
   ],
 
   // Content for Nuxt Content

@@ -24,18 +24,18 @@ export default {}
   grid-column-gap: 24px;
   min-height: 100vh;
 
-  :nth-child(1) {
+  .watson-sidebar {
     grid-column: 1 / 3;
     min-width: 260px;
   }
 
-  :nth-child(2) {
+  .watson-page {
     grid-column: 3 / -1;
-  }
 
-  main {
-    min-height: calc(100vh - 128px);
-    width: 100%;
+    main {
+      min-height: calc(100vh - 128px);
+      width: 100%;
+    }
   }
 }
 </style>
