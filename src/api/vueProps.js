@@ -7,7 +7,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 module.exports = app.use(async function (req, res) {
-  res.header('Access-Control-Allow-Origin', '*')
+  // Allow CORS
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000')
   res.header(
     'Access-Control-Allow-Headers',
     'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method'

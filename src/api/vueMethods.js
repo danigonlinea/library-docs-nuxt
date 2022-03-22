@@ -7,10 +7,13 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 module.exports = app.use(async function (req, res) {
-  res.writeHead(200, '', {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'OPTIONS',
-  })
+  // Allow CORS
+  res.header('Access-Control-Allow-Origin', 'https://watson-site.vercel.app/')
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method'
+  )
+  res.header('Access-Control-Allow-Methods', 'POST, OPTIONS')
 
   try {
     const name = req.body.name
