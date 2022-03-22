@@ -49,7 +49,6 @@ export default {
   modules: ['@nuxtjs/axios', '@nuxt/content'],
 
   axios: {
-    // baseURL: process.env.BASE_URL || 'http://localhost:3000',
     baseURL: 'https://watson-site.vercel.app/',
     browserBaseURL: 'http://localhost:3000',
   },
