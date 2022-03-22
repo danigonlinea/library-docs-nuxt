@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p v-if="isLoading">Fetching properties...</p>
+    <p v-if="isLoading">Fetching slots...</p>
     <p v-else-if="isError">An error occurred :(</p>
     <div v-else>
       <template v-if="isEmpty"><p>No available slots</p> </template>
