@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <div>
     <h1>{{ component.title }}</h1>
     <p>{{ component.description }}</p>
 
@@ -10,7 +10,7 @@
     </ul> -->
 
     <nuxt-content :document="component" />
-  </article>
+  </div>
 </template>
 
 <script>

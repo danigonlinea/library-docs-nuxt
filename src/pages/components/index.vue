@@ -1,9 +1,9 @@
 <template>
-  <article>
+  <div>
     <h1>{{ page.title }}</h1>
     <h2>{{ page.description }}</h2>
     <nuxt-content :document="page" />
-  </article>
+  </div>
 </template>
 
 <script>

@@ -1,10 +1,10 @@
 <template>
-  <article>
+  <div>
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
 
     <nuxt-content :document="page" />
-  </article>
+  </div>
 </template>
 
 <script>
