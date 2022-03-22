@@ -10,13 +10,12 @@ module.exports = app.use(async function (req, res) {
   try {
     const name = req.body.name
 
-    const componentFolder1 = path.resolve('./node_modules/')
-
-    const componentParsed = await parse(
-      `${componentFolder1}/watson-vue/src/components/${name}/${name}.vue`
+    const componentsRootFolder = path.resolve('./node_modules/')
+    const { props = [] } = await parse(
+      `${componentsRootFolder}/watson-vue/src/components/${name}/${name}.vue`
     )
 
-    res.status(200).json({ data: componentParsed })
+    res.status(200).json({ props })
   } catch (error) {
     res.end(`Failed parsing component`)
   }
