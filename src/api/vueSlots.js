@@ -10,8 +10,7 @@ app.use(cors())
 
 module.exports = app.use(async function (req, res) {
   try {
-    const name = req.body.name
-
+    const { name = '' } = req.body
     const componentsRootFolder = path.resolve('./node_modules/')
     const { slots = [] } = await parse(
       `${componentsRootFolder}/watson-vue/src/components/${name}/${name}.vue`

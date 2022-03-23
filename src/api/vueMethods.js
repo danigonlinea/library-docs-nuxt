@@ -17,8 +17,7 @@ module.exports = app.use(async function (req, res) {
   res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE')
 
   try {
-    const name = req.body.name
-
+    const { name = '' } = req.body
     const componentsRootFolder = path.resolve('./node_modules/')
     const { methods = [] } = await parse(
       `${componentsRootFolder}/watson-vue/src/components/${name}/${name}.vue`
