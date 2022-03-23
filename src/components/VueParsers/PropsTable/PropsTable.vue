@@ -46,7 +46,7 @@ export default {
   },
   async mounted() {
     try {
-      const { props } = await this.$axios.$post('/api/vue-props', {
+      const { props } = await this.$axios.$post('vue-props', {
         name: this.of,
       })
 

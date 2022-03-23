@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Project Folder Directory
   srcDir: 'src/',
@@ -60,8 +60,10 @@ export default {
   },
 
   axios: {
-    proxy: true,
-    prefix: process.env.API_URL,
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? 'https://watson-site.vercel.app/api'
+        : 'http://localhost:3000/api',
   },
 
   // publicRuntimeConfig: {
@@ -71,20 +73,10 @@ export default {
   //   },
   // },
 
-  proxy: {
-    '/api/vue-props': {
-      target: 'https://watson-site.vercel.app/',
-      pathRewrite: {
-        '^/api/vue-props': '/',
-      },
-    },
-  },
-
   serverMiddleware: [
     { path: '/api/vue-props', handler: '~/api/vueProps.js' },
     { path: '/api/vue-slots', handler: '~/api/vueSlots.js' },
     { path: '/api/vue-methods', handler: '~/api/vueMethods.js' },
-    { path: '/server', handler: '~/server-middleware/vueMethods.js' },
   ],
 
   // Content for Nuxt Content

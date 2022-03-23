@@ -46,7 +46,7 @@ export default {
   },
   async mounted() {
     try {
-      const { slots } = await this.$axios.$post('/api/vue-slots', {
+      const { slots } = await this.$axios.$post('vue-slots', {
         name: this.of,
       })
 
