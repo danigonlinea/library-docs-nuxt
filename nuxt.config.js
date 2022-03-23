@@ -84,6 +84,7 @@ export default {
     { path: '/api/vue-props', handler: '~/api/vueProps.js' },
     { path: '/api/vue-slots', handler: '~/api/vueSlots.js' },
     { path: '/api/vue-methods', handler: '~/api/vueMethods.js' },
+    { path: '/server', handler: '~/server-middleware/vueMethods.js' },
   ],
 
   // Content for Nuxt Content

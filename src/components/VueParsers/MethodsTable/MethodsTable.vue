@@ -48,7 +48,7 @@ export default {
   },
   async mounted() {
     try {
-      const { methods } = await this.$axios.$post('/api/vue-methods', {
+      const { methods } = await this.$axios.$post('/server', {
         name: this.of,
       })
 
