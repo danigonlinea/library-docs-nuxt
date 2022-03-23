@@ -48,21 +48,20 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/axios', '@nuxt/content'],
 
+  env: {
+    BASE_URL:
+      process.env.NODE_ENV === 'production'
+        ? 'https://watson-site.vercel.app/'
+        : 'http://localhost:3000/',
+  },
   axios: {
-    baseURL: process.env.BASE_URL || 'http://localhost:3000',
+    baseURL: process.env.BASE_URL,
   },
 
   publicRuntimeConfig: {
     axios: {
-      alo: process.env.BASE_URL,
       baseURL: process.env.BASE_URL,
-      browserBaseURL: process.env.NODE_ENV,
-    },
-  },
-
-  privateRuntimeConfig: {
-    axios: {
-      baseURL: process.env.BASE_URL,
+      browserBaseURL: process.env.BASE_URL,
     },
   },
 
