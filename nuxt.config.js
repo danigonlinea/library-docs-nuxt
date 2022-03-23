@@ -56,11 +56,12 @@ export default {
   },
 
   proxy: {
-    '/api': {
+    '/api/vue-props': {
       target: 'https://watson-site.vercel.app/',
       pathRewrite: {
-        '^/api': '/',
+        '^/api/vue-props': '/',
       },
+      changeOrigin: true,
     },
   },
 
