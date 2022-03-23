@@ -52,6 +52,16 @@ export default {
     baseURL:
       process.env.PRODUCTION_BASE_URL || 'https://watson-site.vercel.app/',
     browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
+    proxy: true,
+  },
+
+  proxy: {
+    '/api': {
+      target: 'https://watson-site.vercel.app/',
+      pathRewrite: {
+        '^/api': '/',
+      },
+    },
   },
 
   serverMiddleware: [
