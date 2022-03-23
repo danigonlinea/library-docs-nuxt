@@ -52,16 +52,17 @@ export default {
     baseURL:
       process.env.PRODUCTION_BASE_URL || 'https://watson-site.vercel.app/',
     browserBaseURL: process.env.BASE_URL || 'http://localhost:3000',
-    proxy: true,
   },
 
-  proxy: {
-    '/api/vue-props': {
-      target: 'https://watson-site.vercel.app/',
-      pathRewrite: {
-        '^/api/vue-props': '/',
-      },
-      changeOrigin: true,
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.PRODUCTION_BASE_URL,
+    },
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL,
     },
   },
 
