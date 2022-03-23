@@ -54,6 +54,7 @@ export default {
         ? 'https://watson-site.vercel.app/'
         : 'http://localhost:3000/',
   },
+
   axios: {
     baseURL: process.env.BASE_URL,
   },
