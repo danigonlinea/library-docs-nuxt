@@ -6,17 +6,15 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-// module.exports = app.use(async function (req, res) {
-//   res.header('Access-Control-Allow-Origin', '*')
-//   res.header(
-//     'Access-Control-Allow-Headers',
-//     'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method'
-//   )
-//   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE')
-//   res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE')
-// })
+module.exports = app.use(async function (req, res) {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method'
+  )
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE')
+  res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE')
 
-app.post('*', async (req, res) => {
   try {
     const name = req.body.name
 
@@ -30,5 +28,3 @@ app.post('*', async (req, res) => {
     res.end(`Failed parsing component`)
   }
 })
-
-module.exports = app
