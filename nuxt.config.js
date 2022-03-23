@@ -5,6 +5,8 @@ export default {
   // Project Folder Directory
   srcDir: 'src/',
 
+  ssr: true,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'watson-website',
