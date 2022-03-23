@@ -57,7 +57,6 @@ export default {
 
   axios: {
     baseURL: process.env.BASE_URL,
-    proxy: true,
   },
 
   publicRuntimeConfig: {

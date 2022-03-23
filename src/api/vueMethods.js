@@ -1,10 +1,11 @@
 import { parse } from 'vue-docgen-api'
 const path = require('path')
 const express = require('express')
+const bodyParser = require('body-parser')
 
 const app = express()
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
 module.exports = app.use(async function (req, res) {
   res.header('Access-Control-Allow-Origin', '*')
