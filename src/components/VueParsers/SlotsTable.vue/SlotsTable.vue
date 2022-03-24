@@ -46,13 +46,14 @@ export default {
   },
   async mounted() {
     try {
-      const { slots } = await this.$axios.$post('vue-slots', {
-        name: this.of,
-      })
+      const { default: { slots = [] } = {} } = await import(
+        `../../../vueJson/${this.of}.parsed.json`
+      )
 
       this.slots = [...slots]
       this.state = this.fetchState.loaded
     } catch (error) {
+      console.log(error)
       this.state = this.fetchState.error
     }
   },

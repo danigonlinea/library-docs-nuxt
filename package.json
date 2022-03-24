@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "format": "prettier --write .",
-    "lint": "eslint 'src/**/*.*' --fix"
+    "lint": "eslint 'src/**/*.*' --fix",
+    "generate:vuejson": "node ./scripts/vueParse.js"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -23,7 +24,8 @@
     "watson-vue": "latest",
     "express": "^4.17.3",
     "body-parser": "^1.19.2",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "fs-extra": "^10.0.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",

@@ -1,0 +1,50 @@
+{
+    "displayName": "Toggle",
+    "exportName": "default",
+    "description": "",
+    "tags": {},
+    "props": [
+        {
+            "name": "id",
+            "type": {
+                "name": "string"
+            },
+            "required": true
+        },
+        {
+            "name": "label",
+            "type": {
+                "name": "string"
+            },
+            "required": true,
+            "defaultValue": {
+                "func": false,
+                "value": "'Label'"
+            }
+        },
+        {
+            "name": "disabled",
+            "type": {
+                "name": "boolean"
+            },
+            "required": false
+        },
+        {
+            "name": "checked",
+            "type": {
+                "name": "boolean"
+            },
+            "required": true
+        }
+    ],
+    "events": [
+        {
+            "name": "input",
+            "type": {
+                "names": [
+                    "undefined"
+                ]
+            }
+        }
+    ]
+}

@@ -48,13 +48,14 @@ export default {
   },
   async mounted() {
     try {
-      const { methods } = await this.$axios.$post('/vue-methods', {
-        name: this.of,
-      })
+      const { default: { methods = [] } = {} } = await import(
+        `../../../vueJson/${this.of}.parsed.json`
+      )
 
       this.methods = [...methods]
       this.state = this.fetchState.loaded
     } catch (error) {
+      console.log(error)
       this.state = this.fetchState.error
     }
   },
