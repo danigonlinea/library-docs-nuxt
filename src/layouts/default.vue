@@ -14,7 +14,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData({ $content, route, params }) {
+    const page = await $content(`components/index`).fetch()
+
+    console.log('layout', page)
+    return {
+      page,
+    }
+  },
+  async mounted() {
+    const page = await this.$content('', { deep: true }).fetch()
+
+    console.log('mounted', page)
+  },
+}
 </script>
 
 <style lang="scss" scoped>
