@@ -48,37 +48,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxtjs/axios', '@nuxt/content'],
 
-  // env: {
-  //   BASE_URL:
-  //     process.env.NODE_ENV === 'production'
-  //       ? 'https://watson-site.vercel.app/'
-  //       : 'http://localhost:3000/',
-  // },
-
-  env: {
-    API_URL: 'https://watson-site.vercel.app/',
-  },
-
-  axios: {
-    baseURL:
-      process.env.NODE_ENV === 'production'
-        ? 'https://watson-site.vercel.app/api'
-        : 'http://localhost:3000/api',
-  },
-
-  // publicRuntimeConfig: {
-  //   axios: {
-  //     baseURL: process.env.BASE_URL,
-  //     browserBaseURL: process.env.BASE_URL,
-  //   },
-  // },
-
-  serverMiddleware: [
-    { path: '/api/vue-props', handler: '~/api/vueProps.js' },
-    { path: '/api/vue-slots', handler: '~/api/vueSlots.js' },
-    { path: '/api/vue-methods', handler: '~/api/vueMethods.js' },
-  ],
-
   // Content for Nuxt Content
   content: {
     // Options
