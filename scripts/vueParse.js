@@ -1,7 +1,6 @@
 const path = require('path')
 const parse = require('vue-docgen-api').parse
 const fs = require('fs-extra')
-const jsonminify = require('jsonminify')
 
 const watsonComponentDir = 'watson-vue/src/components'
 const vueJsonOutputDir = 'src/vueJson'
@@ -19,9 +18,8 @@ const vueJsonOutputDir = 'src/vueJson'
 
         if (fs.existsSync(componentFilePath)) {
           const componentInfo = await parse(componentFilePath)
-          const componentInfoString = jsonminify(
-            JSON.stringify(componentInfo, null, 4)
-          )
+          const componentInfoString = JSON.stringify(componentInfo)
+
           fs.writeFileSync(
             `${vueJsonOutputDir}/${componentName}.parsed.json`,
             componentInfoString
