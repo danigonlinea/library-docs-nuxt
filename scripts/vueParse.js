@@ -15,18 +15,24 @@ const vueJsonOutputDir = 'src/vueJson'
     fs.readdirSync(`${watsonComponentsPath}`, { withFileTypes: true })
       .filter(path => path.isDirectory())
       .forEach(async ({ name: componentName }) => {
-        const componentFile = `${watsonComponentsPath}/${componentName}/${componentName}.vue`
-        const componentInfo = await parse(componentFile)
-        const componentInfoString = jsonminify(
-          JSON.stringify(componentInfo, null, 4)
-        )
-        fs.writeFileSync(
-          `${vueJsonOutputDir}/${componentName}.parsed.json`,
-          componentInfoString
-        )
+        const componentFilePath = `${watsonComponentsPath}/${componentName}/${componentName}.vue`
 
-        // eslint-disable-next-line no-console
-        console.log(`Generating... ${componentName}`)
+        if (fs.existsSync(componentFilePath)) {
+          const componentInfo = await parse(componentFilePath)
+          const componentInfoString = jsonminify(
+            JSON.stringify(componentInfo, null, 4)
+          )
+          fs.writeFileSync(
+            `${vueJsonOutputDir}/${componentName}.parsed.json`,
+            componentInfoString
+          )
+
+          // eslint-disable-next-line no-console
+          console.log(`Generating... ${componentName}`)
+        } else {
+          // eslint-disable-next-line no-console
+          console.log(`Vue file does not exist... ${componentName}`)
+        }
       })
   } catch (err) {
     // eslint-disable-next-line no-console

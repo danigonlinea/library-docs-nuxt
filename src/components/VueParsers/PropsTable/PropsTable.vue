@@ -53,6 +53,7 @@ export default {
       this.props = [...props]
       this.state = this.fetchState.loaded
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(error)
       this.state = this.fetchState.error
     }
