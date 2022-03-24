@@ -16,7 +16,7 @@
 <script>
 export default {
   async asyncData({ $content, params, route }) {
-    const component = await $content(`${route.path}/index`).fetch()
+    const component = await $content(`${route.path}/${params.name}`).fetch()
 
     return {
       component,

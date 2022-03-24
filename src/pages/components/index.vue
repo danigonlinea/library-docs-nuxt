@@ -9,7 +9,7 @@
 <script>
 export default {
   async asyncData({ $content, route, params }) {
-    const page = await $content(`components/index`).fetch()
+    const page = await $content(`components/components`).fetch()
 
     return {
       page,

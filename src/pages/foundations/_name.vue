@@ -10,6 +10,7 @@
 <script>
 export default {
   async asyncData({ $content, params, route }) {
+    console.log(route, params)
     const page = await $content(route.path).fetch()
 
     return {
