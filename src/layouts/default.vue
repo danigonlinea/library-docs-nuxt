@@ -1,6 +1,6 @@
 <template>
   <div id="watson-site" class="watson-site">
-    <Sidebar navigation="menu" />
+    <Sidebar :menu="menu" />
     <div class="watson-page">
       <Header />
       <!-- Here is the content of the page -->
@@ -17,13 +17,14 @@
 export default {
   data() {
     return {
-      menu: [],
+      menu: {},
     }
   },
   async mounted() {
-    const page = await this.$content('', { deep: true }).fetch()
+    const content = await this.$content('', { deep: true }).fetch()
 
-    console.log('mounted', page)
+    // Build navigation menu options based on content
+    console.log('Content', content)
   },
 }
 </script>

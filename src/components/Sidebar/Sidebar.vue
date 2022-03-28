@@ -34,6 +34,12 @@ const watsonSidebarMenu = {
 
 export default {
   name: 'Sidebar',
+  props: {
+    menu: {
+      type: Object,
+      required: true,
+    },
+  },
   computed: {
     sidebarMenu() {
       return Object.keys(watsonSidebarMenu).map(sectionName => {
