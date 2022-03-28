@@ -20,12 +20,12 @@ export default {
       menu: {},
     }
   },
-  async mounted() {
-    const content = await this.$content('', { deep: true }).fetch()
+  // async mounted() {
+  //   const content = await this.$content('', { deep: true }).fetch()
 
-    // Build navigation menu options based on content
-    console.log('Content', content)
-  },
+  //   // Build navigation menu options based on content
+  //   console.log('Content', content)
+  // },
 }
 </script>
 

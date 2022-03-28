@@ -1,9 +1,10 @@
 $white: #fff;
 
 .watson-header {
+  height: 76px;
   position: sticky;
   top: 0;
+  z-index: 1;
   background: $white;
   padding: 1.5rem 0;
-  z-index: 1; // header above content in scroll
 }

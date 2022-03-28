@@ -4,7 +4,7 @@ export default function (to, from, savedPosition) {
 
     if (anchor) {
       const anchorPos = anchor.getBoundingClientRect().top
-      const anchorWithTopMargin = anchorPos - 100
+      const anchorWithTopMargin = anchorPos + window.pageYOffset - 150
 
       if ('scrollBehavior' in document.documentElement.style) {
         return window.scrollTo({
