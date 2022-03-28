@@ -50,7 +50,7 @@ export default {
 
   // Content for Nuxt Content
   content: {
-    // Options
+    liveEdit: false,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
