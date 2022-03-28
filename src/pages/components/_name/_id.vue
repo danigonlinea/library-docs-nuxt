@@ -29,7 +29,6 @@ export default {
 
           return {
             id,
-            path: route.path,
             anchor: `#${id}`,
             text,
           }
